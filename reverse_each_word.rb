@@ -2,8 +2,9 @@ require'pry'
 
 def reverse_each_word(string)
   array = string.split(" ")
+  new_arr = []
   array.collect do |word|
-    word.reverse
+    new_arr.push(word.reverse)
   end
-  binding.pry
+  new_arr.join(" ")
 end
